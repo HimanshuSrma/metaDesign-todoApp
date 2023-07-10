@@ -1,0 +1,54 @@
+$primaryThemeColor: #bfbb39;
+$secondaryThemeColor: #ebebeb;
+
+* {font-family: 'Lato';}
+.primaryThemeColor { color: $primaryThemeColor;}
+.bg-primaryThemeColor { background: $primaryThemeColor;}
+.bg-secondaryThemeColor { background: $secondaryThemeColor;}
+.bg-white {background: #fff;}
+.font-12 {font-size: 12px;}
+.w-fit-content {width: fit-content;}
+.popupBox {position: absolute;right: 0; top: -50%;}
+.taskListUl li:not(:nth-last-of-type(1)) {border-bottom: 1px solid $secondaryThemeColor;}
+
+.form-control {
+  color: #212529;
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: initial !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    color: #212529;
+    border-color: initial;
+    outline: 0;
+    box-shadow: initial;
+  }
+}
+
+
+.primaryBtn {
+  color: #fff;
+  background: $primaryThemeColor;
+  border: 2px solid $primaryThemeColor;
+  &:hover {
+    color: #fff !important;
+  }
+  &:focus{
+    box-shadow: initial;
+  }
+}
+.outlineBtn {
+  background: transparent;
+  color: $primaryThemeColor;
+  border: 2px solid $primaryThemeColor;
+  &:hover {
+    color: $primaryThemeColor !important;
+  }
+  &:focus{
+    box-shadow: initial;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .popupBox {top: initial;}
+}
